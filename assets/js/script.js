@@ -3,8 +3,8 @@
 var arrProducts = [
     { name: 'product30', price: 30, count: 5 },
     { name: 'product140', price: 140, count: 3 },
-    { name: 'product50', price: 50, count: 6 },
-    { name: 'product120', price: 120, count: 2 }
+    { name: 'product120', price: 120, count: 6 },
+    { name: 'product50', price: 50, count: 2 }
 ];
 
 for (var i = 0; i < arrProducts.length; i++) {
@@ -39,7 +39,6 @@ var getProductWithMaxPrice = function () {
  
     return productWithMaxPrice
 }
-
 
 // Задание 3
 
