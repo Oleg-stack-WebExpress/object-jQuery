@@ -27,18 +27,18 @@ console.log(arrProductsAbove100);
 // Задание 2
 
 var getProductWithMaxPrice = function () {
-    if (arrProducts.length === 0) return null; // Проверка на пустой массив
-
-    var productWithMaxPrice = arrProducts[0];
-
-    for (var i = 1; i < arrProducts.length; i++) {
+    var productWithMaxPrice = undefined
+    
+ // Пройтись по товарам
+ for (var i = 0; i < arrProducts.length; i++) {
+  // Сравнить цену i-того товара с ценой ранее запомненного
         if (arrProducts[i].price > productWithMaxPrice.price) {
-            productWithMaxPrice = arrProducts[i]; // Просто переприсваиваем товар
+            productWithMaxPrice = arrProducts[i].price; // Запомнить новый товар если он более дорогой
         }
     }
-
-    return productWithMaxPrice; // Вернётся один товар с максимальной ценой
-};
+ 
+    return productWithMaxPrice
+}
 
 
 // Задание 3
@@ -55,3 +55,9 @@ var shop = {
 }
 
 console.log(shop.suppilers);
+
+
+// Задание 1 jQuery
+
+
+
